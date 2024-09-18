@@ -9,8 +9,21 @@ let pessoa = {
     cores_favoritas: ['branca', 'vermelha', 'preta'],
     altura: 1.69,
     estrangeiro: false,
-    endereco: 'Rua Rio Negro, 20, Tabapua, Caucaia-Ce, 62840-000',
+    //endereco: 'Rua Rio Negro, 20, Tabapua, Caucaia-Ce, 62840-000',
+    endereco : {
+        rua: 'Rua Rio Negro',
+        numero: 20,
+        bairro: 'Tabapua',
+        cidade: 'Caucaia',
+        estado: 'CE',
+        cep: '62840-000',
+
+    },
 };
+console.log('CEP:', pessoa.endereco.cep);
+
+//console.log('CEP:', pessoa.endereco.split(',')[4].trim());
+
 
 // 3- acessando valor da propriedade de um objeto
 console.log(pessoa.nome);
